@@ -291,8 +291,8 @@ Dans un contexte académique comme professionnel, obtenir des performances stabl
 
 ```bash
 # 1. Cloner le projet
-git clone https://github.com/votre-repo/projet_Data_mining.git
-cd projet_Data_mining
+git clone https://github.com/HelaHamza/stressLevelDetection_DataMining.git
+cd stressLevelDetection_DataMining
 
 # 2. Créer et activer l'environnement virtuel
 python -m venv venv
@@ -311,9 +311,6 @@ python src/setup_folders.py
 ```bash
 python src/main.py
 ```
-
-**Durée d'exécution :** ~15 secondes  
-**Sortie :** 13 fichiers générés dans `results/`
 
 ### Structure des Résultats
 
@@ -341,25 +338,8 @@ results/
 
 ---
 
-## 📚 Références Académiques
-
-- Breiman, L. (2001). *Random Forests*. Machine Learning, 45(1), 5-32.
-- Quinlan, J. R. (1986). *Induction of decision trees*. Machine Learning, 1(1), 81-106.
-- Cover, T., & Hart, P. (1967). *Nearest neighbor pattern classification*. IEEE Transactions.
-
----
 
 ## 👤 Auteur
 
 **Hala Hamza**  
 Projet Data Mining - Année Académique 2024/2025
-
----
-
-## 📄 Licence
-
-Projet académique - Utilisation éducative libre avec citation de la source.
-
----
-
-**Note :** La documentation technique complète et le code source sont disponibles dans le dépôt GitHub du projet.
