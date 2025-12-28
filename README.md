@@ -110,7 +110,7 @@ Le projet génère automatiquement **13 fichiers de résultats** organisés de m
 
 #### Graphiques Comparatifs
 
-**1. Comparaison des Métriques (Barres)**
+**. Comparaison des Métriques (Barres)**
 
 ```
 Accuracy      ████████████████████ 85.5%  ██████████████████████ 86.8%  ████████████████████████ 88.2%
@@ -119,25 +119,6 @@ Accuracy      ████████████████████ 85.5%
 Precision     ████████████████████ 85.5%  ██████████████████████ 86.9%  ████████████████████████ 88.2%
 Recall        ████████████████████ 85.5%  ██████████████████████ 86.8%  ████████████████████████ 88.2%
 F1-Score      ████████████████████ 85.4%  ██████████████████████ 86.8%  ████████████████████████ 88.2%
-```
-
-**2. Vue Globale (Radar Chart)**
-
-```
-          Accuracy
-              ∧
-             /|\
-            / | \
-  Recall   /  |  \   Precision
-          /   |   \
-         /    •    \
-        /     |     \
-       /__________\
-            F1-Score
-
-• KNN (bleu)
-• Decision Tree (vert)
-• Random Forest (rouge) ← Couverture optimale
 ```
 
 #### Fichiers de Données
@@ -235,6 +216,25 @@ Trois algorithmes représentant des paradigmes différents ont été sélectionn
 | **Decision Tree** | 86.8% | 86.9% | 86.8% | 86.8% | 91.6% |
 | **Random Forest** | **88.2%** | **88.2%** | **88.2%** | **88.2%** | **94.8%** |
 
+
+### Affichage des principaux métriques
+Cette figure présente une comparaison des performances de trois modèles de classification (KNN, Decision Tree et Random Forest) selon quatre métriques : Accuracy, Precision, Recall et F1-score.
+
+On observe que :
+
+🔹 Random Forest obtient les meilleures performances globales sur l’ensemble des métriques, avec des valeurs proches de 0.89, indiquant une excellente capacité de généralisation et un bon équilibre entre précision et rappel.
+
+🔹 Decision Tree présente des résultats intermédiaires, avec des performances légèrement inférieures à Random Forest mais supérieures à KNN.
+
+🔹 KNN affiche les performances les plus faibles parmi les trois modèles, bien qu’elles restent satisfaisantes (> 0.83 sur toutes les métriques).
+
+Les résultats très proches entre Accuracy, Precision, Recall et F1-score suggèrent que le dataset est relativement équilibré et que les modèles ne sont pas biaisés vers une classe particulière.
+
+<p align="center">
+  <img src="results\metrics_comparison.png" width="600">
+</p>
+
+
 **Meilleur modèle identifié :** Random Forest (F1-Score = 88.2%)
 
 ### Interprétation des Résultats
@@ -278,6 +278,7 @@ La **stabilité cross-modèles** (écart <3%) constitue une validation méthodol
 Dans un contexte académique comme professionnel, obtenir des performances stables entre 85-88% avec trois paradigmes différents est considéré comme un **gage de qualité** plutôt qu'une limitation.
 
 ---
+
 
 ## 🚀 Exécution du Projet
 
