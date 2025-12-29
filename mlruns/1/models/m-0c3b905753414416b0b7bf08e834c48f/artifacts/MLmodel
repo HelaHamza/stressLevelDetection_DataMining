@@ -1,0 +1,22 @@
+artifact_path: file:///C:/Users/Hala_Hamza/Desktop/projet_Data_mining/mlruns/1/models/m-0c3b905753414416b0b7bf08e834c48f/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.9
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+mlflow_version: 3.8.1
+model_id: m-0c3b905753414416b0b7bf08e834c48f
+model_size_bytes: 10535
+model_uuid: m-0c3b905753414416b0b7bf08e834c48f
+prompts: null
+run_id: 1fcd4404e9e44922b539b4f41523cac7
+utc_time_created: '2025-12-29 19:06:50.612545'
