@@ -145,10 +145,15 @@ et versionner les modèles entraînés.
 ### Interface MLflow UI  permet de :
 
 📊 Visualiser toutes les expériences en un coup d'œil
+
 📈 Comparer les performances des modèles (graphiques interactifs)
+
 🔍 Explorer les hyperparamètres de chaque run
+
 💾 Télécharger les modèles sauvegardés
+
 📝 Ajouter des notes et tags pour organiser vos expériences
+
 🔄 Revenir à des versions antérieures de modèles
 
 ### 🔹 Vue générale des expérimentations
@@ -235,7 +240,7 @@ stressLevelDetection_DataMining/
 └── .gitignore                              # Fichiers à ignorer (venv, mlruns, etc.)
 
 
----
+```
 ---
 
 ## 🚀 Installation et Exécution
@@ -285,23 +290,33 @@ Résultats générés :
 ### Option 2 : Pipeline avec MLflow (Recommandé) 🚀
 Pour un tracking complet des expériences avec interface interactive :
 
-# Terminal 1 : Lancer l'entraînement avec MLflow
-python src/train_with_mlflow.py ==> Cette commande crée les expériences MLflow et stocke tous les résultats de l’entraînement (Entraîne le modèle et enregistre les résultats).
+#### Terminal 1 : Lancer l'entraînement avec MLflow
+```bash
+python src/train_with_mlflow.py # Cette commande crée les expériences MLflow et stocke tous les résultats de l’entraînement (Entraîne le modèle et enregistre les résultats).
+```
 
-# Terminal 2 : Lancer l'interface MLflow UI (dans une nouvelle fenêtre)
+
+#### Terminal 2 : Lancer l'interface MLflow UI (dans une nouvelle fenêtre)
+```bash
 mlflow ui ==> Cette commande permet de visualiser et analyser les résultats enregistrés par la première commande (Affiche graphiquement ces résultats).
-
-Accès à l'interface :http://localhost:5000
+```
+#### Accès à l'interface MLflow : 
+http://localhost:5000  
 
 
 
 - Fonctionnalités disponibles dans l'interface :
 
 📊 Tableau de bord avec tous les runs
+
 📈 Graphiques comparatifs interactifs
+
 🔍 Détails complets de chaque expérimentation
+
 💾 Téléchargement des modèles et artifacts
+
 🏷️ Ajout de tags et notes
+
 🔄 Gestion du versioning des modèles
 
 
