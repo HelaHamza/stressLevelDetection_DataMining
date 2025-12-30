@@ -247,8 +247,11 @@ stressLevelDetection_DataMining/
 
 ### Prérequis
 -Python 3.10 ou supérieur
+
 -pip (gestionnaire de paquets Python)
+
 -2 GB d'espace disque disponible
+
 -Navigateur web (pour MLflow UI)
 
 ### Installation
@@ -283,8 +286,11 @@ python src/main.py
 Résultats générés :
 
 -13 fichiers de visualisations (graphiques PNG, matrices de confusion)
+
 -Modèles entraînés sauvegardés dans models/
+
 -Rapport d'évaluation détaillé
+
 -Métriques exportées en CSV
 
 ### Option 2 : Pipeline avec MLflow (Recommandé) 🚀
